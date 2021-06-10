@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="flotr2.min.js"></script>
+    <title>Membuat Grafik</title>
+</head>
+
+<body>
+    <div id="grafik" style="width: 600px; height: 300px;"> </div>
+    <script type="text/javascript">
+        var dataku = [
+            [
+                [2006, 17],
+                [2007, 11],
+                [2008, 15],
+                [2009, 15],
+                [2010, 18],
+                [2011, 21],
+                [2012, 28]
+            ]
+        ];
+        var label1 = [
+                [2006, "FTI"],
+                [2007, "FK"],
+                [2008, "FSRD"],
+                [2009, "FH"],
+                [2010, "FTKE"],
+                [2011, "FE"],
+                [2012, "FALTL"]
+        ];
+        window.onload = function () {
+            Flotr.draw(document.getElementById("grafik"), dataku, {
+                title: "Grafik Penerimaan Mahasiswa Baru",
+                bars: {
+                    show: true
+                },
+                xaxis: {
+                    ticks: label1
+                },
+                colors: ["red"]
+            });
+        };
+    </script>
+</body>
+</html>
