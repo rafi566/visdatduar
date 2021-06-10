@@ -97,6 +97,15 @@ window.onload = function (container) {
             labelsAngle: 30
         },
         colors: ["red"]
+        mouse : {
+					track           : true, // Enable mouse tracking
+					lineColor       : 'purple',
+					relative        : true,
+					position        : 'ne',
+					sensibility     : 1,
+					trackDecimals   : 2,
+					trackFormatter  : function (o) { return 'x = ' + label2[(o.x-1)][1] +', y = ' + o.y; }
+				},
     });
 
     Flotr.draw(document.getElementById("grafik2"), label3, {
@@ -111,7 +120,16 @@ window.onload = function (container) {
             mode: 'time',
             labelsAngle: 45
         },
-        colors: ["blue"]
+        colors: ["blue"],
+        mouse : {
+					track           : true, // Enable mouse tracking
+					lineColor       : 'purple',
+					relative        : true,
+					position        : 'ne',
+					sensibility     : 1,
+					trackDecimals   : 2,
+					trackFormatter  : function (o) { return 'x = ' + label4[(o.x-1)][1] +', y = ' + o.y; }
+				},
     });
 
     Flotr.draw(document.getElementById("grafik3"), label5, {
@@ -125,7 +143,16 @@ window.onload = function (container) {
             ticks: label6,
             labelsAngle: 30
         },
-        colors: ["green"]
+        colors: ["green"],
+        mouse : {
+					track           : true, // Enable mouse tracking
+					lineColor       : 'purple',
+					relative        : true,
+					position        : 'ne',
+					sensibility     : 1,
+					trackDecimals   : 2,
+					trackFormatter  : function (o) { return 'x = ' + label6[(o.x-1)][1] +', y = ' + o.y; }
+				},
     });
     
 };
