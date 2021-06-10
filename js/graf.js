@@ -86,7 +86,7 @@ var label6 = [
 
 window.onload = function (container) {
     Flotr.draw(document.getElementById("grafik"), label1, {
-        title: "Data Covid",
+        title: "Maret - Desember 2020",
         HtmlText : false,
         bars: {
             show: true,
@@ -100,7 +100,7 @@ window.onload = function (container) {
     });
 
     Flotr.draw(document.getElementById("grafik2"), label3, {
-        title: "Data Covid",
+        title: "Desember 2020 - Februari 2021",
         HtmlText : false,
         bars: {
             show: true,
@@ -115,7 +115,7 @@ window.onload = function (container) {
     });
 
     Flotr.draw(document.getElementById("grafik3"), label5, {
-        title: "Data Covid",
+        title: "Agustus - Desember 2020",
         HtmlText : false,
         bars: {
             show: true,
